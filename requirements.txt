@@ -1,0 +1,9 @@
+crewai
+langchain
+langchain-community
+langchain-aws
+boto3
+pandas
+streamlit
+SQLAlchemy
+pymysql

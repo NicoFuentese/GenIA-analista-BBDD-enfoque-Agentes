@@ -1,0 +1,11 @@
+services:
+  agente-crew:
+    build: .
+    container_name: agente-crew-glpi
+    restart: unless-stopped
+    ports:
+      - "8503:8501"    # <--- Tu servidor (8503) : Streamlit interno (8501)
+    volumes:
+      - ./queries:/app/queries  # Mantenemos la carpeta por si agregamos guardado luego
+    env_file:
+      - .env
